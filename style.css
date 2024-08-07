@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'DMSerifDisplayItalic';
+  src: url('Fuentes/DMSerifDisplay-Italic.ttf') format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  src: url('Fuentes/DMSerifDisplay-Regular.ttf') format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('Fuentes/PoiretOne-Regular.ttf') format('truetype');
+  
+}
+
+ * {
+  background-image: url(n-n-BtbjCFUvBXs-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  font-family: 'PoiretOne', sans-serif;
+}
+
+#nombre {
+  position: absolute;
+  font-size:75px;
+  top: 180px; /* posición vertical */
+  left: 200px; /* posición horizontal */
+
+  text-align: right;
+}
+
+#descripcion {
+  font-size: 39px;
+  position: absolute;
+  top: 285px; /* posición vertical */
+  left: 208px; /* posición horizontal */
+  color: darkorange;
+}
+
+#mi-foto {
+  position: absolute;
+  top: 195px; /* posición vertical */
+  right: 360px; /* posición horizontal */
+  width: 380px; /* tamaño */
+  height: auto;
+  border: 6px solid black;
+  border-radius: 26px;
+  border-color: darkorange;
+}
+
+#sobre-mi {
+  margin-top: 700px;
+}
+
+.botones {
+text-align: center;
+}
+
+#presentacion {
+    font-size:32px;
+    margin: 160px 12%;
+}
+
+
