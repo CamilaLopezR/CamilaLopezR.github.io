@@ -6,26 +6,29 @@
     <link href="style.css" rel="stylesheet" />
     <title>Camila López</title>
     <link href="fuente.zip" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <section>
-      <h1 id="nombre">CAMILA LÓPEZ</h1>
-      <h2 id="descripcion">Desarrolladora Web</h2>
-    </section>
-    
-        <img src="img/IMG_7075.jpg" alt="Mi foto" id="mi-foto">
 
-        <div class="botones">
-            <button id="sobre-mi" onclick = "location.href='sobremi.html'"> Sobre mí </button>
-            <button id="proyectos" onclick  = "location.href= 'misproyectos.html'"> Mis Proyectos </button>
-            <button id="contactame" onclick="mostrarEmail()"> Contáctame </button>
-        </div>
+    <div class="container">
+      <div class="text-container">
+        <h1 id="nombre">CAMILA LÓPEZ</h1>
+        <h2 id="descripcion">Desarrolladora Web</h2>
+      </div>
+      <img id="mi-foto" src="img/IMG_7075.jpg" alt="Foto de Camila">
+    </div>
 
-        <script>
-            function mostrarEmail() {
-                alert("Escríbeme a mi mail: camila.lopez@gmail.com :)");
-            }
-        </script>
+    <div class="botones">
+      <button id="sobre-mi" onclick="location.href='sobremi.html'">Sobre mí</button>
+      <button id="proyectos" onclick="location.href= 'misproyectos.html'">Mis Proyectos</button>
+      <button id="contactame" onclick="mostrarEmail()">Contáctame</button>
+    </div>
+
+    <script>
+      function mostrarEmail() {
+        alert("Escríbeme a mi mail: camila.lopez@gmail.com :)");
+      }
+    </script>
     
   </body>
 </html>
