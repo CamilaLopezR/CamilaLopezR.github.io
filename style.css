@@ -1,69 +1,136 @@
 @font-face {
   font-family: 'DMSerifDisplayItalic';
   src: url('Fuentes/DMSerifDisplay-Italic.ttf') format('truetype');
-  
 }
 
 @font-face {
   font-family: 'DMSerifDisplay';
   src: url('Fuentes/DMSerifDisplay-Regular.ttf') format('truetype');
-  
 }
 
 @font-face {
   font-family: 'PoiretOne';
   src: url('Fuentes/PoiretOne-Regular.ttf') format('truetype');
-  
 }
 
- * {
-  background-image: url(img/n-n-BtbjCFUvBXs-unsplash.jpg);
+* {
+  background-image: url(img/n-n-BtbjCFUvBXs-unsplash.jp);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
   font-family: 'PoiretOne', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+
+  align-items: center;
+  padding: 10%;
+  height: 100vh; /* Se asegura de ocupar toda la pantalla */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4%
 }
 
 #nombre {
-  position: absolute;
-  font-size:75px;
-  top: 180px; /* posición vertical */
-  left: 200px; /* posición horizontal */
-
-  text-align: right;
+  font-size: 6.5vw;
+  margin-bottom: 0.06rem;
+  
 }
 
 #descripcion {
-  font-size: 39px;
-  position: absolute;
-  top: 285px; /* posición vertical */
-  left: 208px; /* posición horizontal */
+  font-size: 4vw;
   color: darkorange;
 }
 
 #mi-foto {
-  position: absolute;
-  top: 195px; /* posición vertical */
-  right: 360px; /* posición horizontal */
-  width: 380px; /* tamaño */
+  width: 35%;
   height: auto;
-  border: 6px solid black;
+  border: 6px solid darkorange;
   border-radius: 26px;
-  border-color: darkorange;
-}
-
-#sobre-mi {
-  margin-top: 700px;
+  padding-right: ;
 }
 
 .botones {
-text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1px;
+  margin-bottom: 8%;
 }
+
+.botones button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid darkorange;
+  background-color: white;
+  color: darkorange;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+/* para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nombre {
+    font-size: 10vw;
+    margin-bottom: 0.1rem;
+  }
+
+  #descripcion {
+    font-size: 8vw;
+  }
+
+  #mi-foto {
+    width: 50%;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: 24%;
+  }
+
+  .botones button {
+    font-size: 2vw;
+    width: 50%;
+    margin: 3px;
+    cursor: pointer;
+  }
+}
+
 
 #presentacion {
-    font-size:32px;
-    margin: 160px 12%;
+  font-size:190%;
+  margin: 10% 10%;
 }
-
-
