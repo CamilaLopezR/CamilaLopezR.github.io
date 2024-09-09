@@ -14,7 +14,8 @@
 }
 
 * {
-  background-image: url(img/n-n-BtbjCFUvBXs-unsplash.jp);
+  background-image: url(img/n-n-BtbjCFUvBXs-unsplash.jp); 
+  background-color:oldlace;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
